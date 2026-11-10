@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Salidas de Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Netlify local
+.netlify/
+
+# Variables de entorno (nunca versionar secretos)
+.env
+.env*.local
+
+# Sistema / editores
+.DS_Store
+*.log
+.vscode/
+.idea/

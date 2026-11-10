@@ -1,0 +1,48 @@
+# Configuración de despliegue en Netlify
+# Sitio Next.js con exportación estática (output: "export" en next.config.ts).
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "24"
+  # El sitio es 100 % estático: se omite el adaptador OpenNext (SSR) de Netlify.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# Encabezados de seguridad básicos
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Recursos con hash en el nombre: caché de larga duración
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Compatibilidad con la URL de blog del sitio Hugo anterior (/blogs/...)
+[[redirects]]
+  from = "/blogs/mipost/"
+  to = "/blog/educacion-equidad-social/"
+  status = 301
+
+[[redirects]]
+  from = "/blogs/webscraping-scrapy/"
+  to = "/blog/web-scraping-python-scrapy/"
+  status = 301
+
+[[redirects]]
+  from = "/blogs/*"
+  to = "/blog/"
+  status = 301
