@@ -21,7 +21,7 @@ export function About() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
           <Reveal className="space-y-5 text-base leading-relaxed text-muted sm:text-lg">
             {about.paragraphs.map((p, i) => (
-              <p key={i} className={i === 0 ? "text-lg font-medium leading-relaxed text-fg sm:text-xl" : ""}>
+              <p key={i} className={i === 0 ? "text-lg font-medium italic leading-relaxed text-fg sm:text-xl" : ""}>
                 {p}
               </p>
             ))}

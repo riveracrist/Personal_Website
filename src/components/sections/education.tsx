@@ -12,7 +12,7 @@ export function Education() {
         <SectionHeading
           index="04"
           eyebrow="Formación académica"
-          title={<span id="formacion-title">Educación y certificaciones</span>}
+          title={<span id="formacion-title">Educación</span>}
         />
 
         {/* Línea de tiempo */}
@@ -60,7 +60,7 @@ export function Education() {
         <div className="mt-24">
           <Reveal>
             <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Formación complementaria</h3>
-            <p className="mt-3 max-w-2xl text-muted">Cursos y certificaciones en datos, nube, inteligencia artificial y programación.</p>
+            <p className="mt-3 max-w-2xl text-muted">Cursos en datos, nube, inteligencia artificial y programación.</p>
           </Reveal>
           <RevealGroup className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
             {certifications.map((c, i) => (

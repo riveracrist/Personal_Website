@@ -123,7 +123,7 @@ export function Hero() {
           </motion.p>
 
           <h1 id="hero-title" className="font-display text-[2.6rem] font-bold leading-[1.02] tracking-tight text-balance min-[400px]:text-5xl sm:text-6xl lg:text-7xl">
-            <SplitWords text="Hola, soy" className="block text-muted" />
+            <SplitWords text="Bienvenid@, soy" className="block text-muted" />
             <SplitWords text="Cristian Rivera G." className="block" delay={0.15} />
             <motion.span
               className="text-gradient mt-2 block text-[0.62em] leading-tight"
@@ -141,7 +141,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.75, ease: EASE }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted text-pretty sm:text-lg"
           >
-            Aprendiz de Ingeniería de Telecomunicaciones (UdeA) y de Análisis y Desarrollo de Software (SENA).{" "}
+            Aprendiz de Ingeniería de Telecomunicaciones y Tecnólogo en Análisis y Desarrollo de Software.{" "}
             {site.intro}
           </motion.p>
 

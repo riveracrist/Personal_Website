@@ -11,10 +11,10 @@ export const site = {
   initials: "CR",
   url: "https://cristianriverag.netlify.app",
   locale: "es_CO",
-  title: "Cristian Rivera G. — Telecomunicaciones, Software y Datos",
+  title: "Cristian Rivera G.",
   description:
     "Sitio personal de Cristian Rivera G.: aprendiz de Ingeniería de Telecomunicaciones y de Análisis y Desarrollo de Software, con interés en ciencia de datos, R, Python, SQL y electrónica.",
-  role: "Telecomunicaciones · Software · Datos",
+  role: "Datos · Software · Telecomunicaciones",
   headline: "Tecnología, datos y curiosidad",
   intro:
     "Este espacio está destinado a compartir mis intereses en tecnología, innovación y otros temas que despiertan mi curiosidad.",
@@ -27,24 +27,24 @@ export const social = [
 
 export const about = {
   paragraphs: [
-    "Aprendiz de Ingeniería en Telecomunicaciones y aprendiz de Análisis y Desarrollo de Software, con una curiosidad por la ciencia de datos y las tecnologías de la información y las comunicaciones (TIC).",
-    "Tengo un interés particular en el aprendizaje de lenguajes de programación como R y Python, debido a su aplicabilidad en el análisis y visualización de información. Deseo adquirir un conocimiento sólido en la gestión de bases de datos utilizando SQL, comprender cómo se estructuran, almacenan y consultan los datos de forma eficiente.",
-    "Paralelamente, me motiva explorar el campo de la electrónica, donde utilizo plataformas como Arduino y Raspberry Pi para comprender los principios básicos del hardware, su conexión con el desarrollo de soluciones tecnológicas y la automatización.",
+    "I don't want to believe. I want to know. — Paulo Bittencourt",
+    "Me motiva el aprendizaje de lenguajes de programación como R y Python por su aplicabilidad en el Machine Learning, la ciencia de datos y la visualización de información. Me interesa C++ por su uso en la programación de hardware y también quiero profundizar en SQL para comprender la gestión de bases de datos y sus arquitecturas.",
+    "También tengo interés en la electrónica y el Internet de las Cosas (IoT), utilizando plataformas como Arduino y Raspberry Pi para desarrollar soluciones conectadas que integren hardware, automatización y comunicación entre dispositivos.",
   ],
   focus: [
     {
-      title: "Análisis y visualización",
-      text: "R y Python para analizar y visualizar información.",
+      title: "Ciencia de datos",
+      text: "R, Python",
       icon: "chart",
     },
     {
       title: "Bases de datos",
-      text: "SQL para estructurar, almacenar y consultar datos de forma eficiente.",
+      text: "SQL, MySQL",
       icon: "database",
     },
     {
       title: "Electrónica y automatización",
-      text: "Arduino y Raspberry Pi para conectar hardware y software.",
+      text: "C++, Arduino, Raspberry Pi",
       icon: "cpu",
     },
   ],
@@ -58,6 +58,8 @@ export const about = {
     "Inteligencia Artificial",
     "Mascotas",
     "Música",
+    "Sistemas Agénticos",
+    "Software Libre",
     "Video Juegos",
   ],
 };
@@ -68,12 +70,12 @@ export const skills = [
   {
     group: "Datos y visualización",
     icon: "chart",
-    items: ["Shiny", "shinydashboard", "Flexdashboard", "ggplot2", "Power BI", "Scrapy", "Databricks"],
+    items: ["Shiny", "shinydashboard", "ggplot2", "Power BI", "Scrapy",  "Tidyverse", "Pandas", "NumPy", "Matplotlib"],
   },
   { group: "Bases de datos", icon: "database", items: ["MySQL", "Diseño de bases de datos", "SQL"] },
-  { group: "Nube", icon: "cloud", items: ["Google Cloud", "Kubernetes (GKE)", "Arquitectura en la nube"] },
+  { group: "Nube", icon: "cloud", items: ["Google Cloud", "Kubernetes (GKE)", "Arquitectura en la nube", "Azure"] },
   { group: "Hardware", icon: "cpu", items: ["Arduino", "Raspberry Pi", "Circuitos"] },
-  { group: "Herramientas", icon: "wrench", items: ["Git", "Quarto", "Markdown", "R Markdown", "learnr"] },
+  { group: "Herramientas", icon: "wrench", items: ["Git", "Quarto", "Markdown", "Databricks", "learnr", "Hermes"] },
 ] as const;
 
 /** Roles de liderazgo y apoyo registrados como actividades extracurriculares. */
@@ -229,20 +231,20 @@ export const projects = [
     title: "Tablero de control — Call Center",
     description:
       "Dashboard interactivo en R (Shiny y shinydashboard) para monitorear el rendimiento diario y evaluar métricas clave de representantes de servicio al cliente, incluyendo desempeño individual y elegibilidad para comisiones.",
-    image: "/images/projects/tablero-call-center.webp",
+    image: "/images/projects/tablero-call-center.png",
     url: "https://m8juuc-riveracrist.shinyapps.io/CallCenterMonitor/",
     tags: ["R", "Shiny", "Dashboard"],
     featured: true,
   },
-  {
-    title: "Calculadora de código de colores de resistores",
-    description:
-      "App alojada en Shiny Apps y creada con el paquete shinydashboard de R, que permite calcular el código de colores y el valor de resistencia de un resistor.",
-    image: "/images/projects/calculadora-resistores.webp",
-    url: "https://m8juuc-riveracrist.shinyapps.io/calculadora_resistores/",
-    tags: ["R", "Shinydashboard", "Circuitos"],
-    featured: false,
-  },
+  // {
+  //   title: "Calculadora de código de colores de resistores",
+  //   description:
+  //     "App alojada en Shiny Apps y creada con el paquete shinydashboard de R, que permite calcular el código de colores y el valor de resistencia de un resistor.",
+  //   image: "/images/projects/calculadora-resistores.webp",
+  //   url: "https://m8juuc-riveracrist.shinyapps.io/calculadora_resistores/",
+  //   tags: ["R", "Shinydashboard", "Circuitos"],
+  //   featured: false,
+  // },
   {
     title: "Sitio Web ADSO",
     description:
@@ -253,10 +255,10 @@ export const projects = [
     featured: false,
   },
   {
-    title: "Tablero de datos con Arduino",
+    title: "Aqua sense — Tablero de riego con sensores",
     description: "Tablero de datos que visualiza los datos capturados con sensores programados con Arduino.",
-    image: "/images/projects/tablero-arduino.webp",
-    url: "https://rpubs.com/Semilla_389/1138902",
+    image: "/images/projects/tablero-arduino.png",
+    url: " https://m8juuc-riveracrist.shinyapps.io/aquasense-riego/",
     tags: ["Arduino", "Flexdashboard", "R"],
     featured: false,
   },
@@ -269,15 +271,15 @@ export const projects = [
     tags: ["MySQL", "ggplot2", "Markdown"],
     featured: false,
   },
-  {
-    title: "Cuestionario interactivo con learnr",
-    description:
-      "Ejemplo de cuestionario con el paquete learnr de R: herramienta para crear tutoriales interactivos o cuestionarios que se pueden publicar en shinyapps.",
-    image: "/images/projects/learnr.webp",
-    url: "https://m8juuc-riveracrist.shinyapps.io/Circuitos/",
-    tags: ["R", "learnr", "Educación"],
-    featured: false,
-  },
+  // {
+  //   title: "Cuestionario interactivo con learnr",
+  //   description:
+  //     "Ejemplo de cuestionario con el paquete learnr de R: herramienta para crear tutoriales interactivos o cuestionarios que se pueden publicar en shinyapps.",
+  //   image: "/images/projects/learnr.webp",
+  //   url: "https://m8juuc-riveracrist.shinyapps.io/Circuitos/",
+  //   tags: ["R", "learnr", "Educación"],
+  //   featured: false,
+  // },
 ];
 
 export const nav = [

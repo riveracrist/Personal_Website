@@ -13,10 +13,10 @@ export function Contact() {
             <span className="text-muted">07</span> · Contacto
           </p>
           <h2 id="contacto-title" className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-balance sm:text-5xl lg:text-6xl">
-            ¿Conversamos sobre <span className="text-gradient">tecnología y datos</span>?
+            Compartamos sobre <span className="text-gradient">tecnología y datos</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            Si tienes una pregunta, una idea o quieres colaborar, encuéntrame en mis redes.
+            Si quiere conversar sobre algún proyecto, encuéntrame en mis redes.
           </p>
         </Reveal>
         <RevealGroup className="mx-auto mt-12 grid max-w-2xl gap-4 sm:grid-cols-2">
