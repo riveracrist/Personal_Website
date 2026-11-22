@@ -1,4 +1,4 @@
-# Cristian Rivera G. — Sitio web personal (versión 2)
+# [Cristian Rivera G.](https://cristianriverag.netlify.app/) — Sitio web personal (versión 2)
 
 Sitio web personal moderno, construido con **Next.js 16** (exportación estática), **React 19**, **Tailwind CSS v4** y **Motion**, preparado para versionarse en **GitHub** y desplegarse automáticamente en **Netlify**.
 
