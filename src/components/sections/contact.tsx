@@ -16,7 +16,7 @@ export function Contact() {
             Compartamos sobre <span className="text-gradient">tecnología y datos</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-            Si quiere conversar sobre algún proyecto, encuéntrame en mis redes.
+            Si quieres conversar sobre algún proyecto, encuéntrame en mis redes.
           </p>
         </Reveal>
         <RevealGroup className="mx-auto mt-12 grid max-w-2xl gap-4 sm:grid-cols-2">
